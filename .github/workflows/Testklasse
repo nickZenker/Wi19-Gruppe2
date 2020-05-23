@@ -1,0 +1,20 @@
+package snapgram;
+
+ 
+
+public class Testklasse {
+
+ 
+
+    public static void main (String []args) {
+        Bild bild1=new Bild("", "","", "");
+        bild1.bildHinzufuegen();
+        
+        
+        bild1.bildAnzeigen();         
+        bild1.bildLoeschen();
+        bild1.bildAnzeigen();
+    }
+    
+    
+}
