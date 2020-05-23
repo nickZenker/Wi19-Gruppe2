@@ -1,0 +1,37 @@
+package snapgram;
+
+ 
+
+public class Bild {
+
+ 
+
+    public String ort;
+    public String bildunterschrift;
+    public String sichtbarkeit;
+    public String person; 
+    public Bild(String ort, String bildunterschrift, String sichtbarkeit, String person) {
+        this.ort = ort;
+        this.bildunterschrift = bildunterschrift;
+        this.sichtbarkeit = sichtbarkeit;
+        this.person = person;
+    }
+    public void bildAnzeigen() {
+        System.out.println("Ort: "+ort+",Bildunterschrift:"+bildunterschrift+",Sichtbarkeit:"+sichtbarkeit+",Person:"+person);
+    }
+    public void bildLoeschen() {
+        this.ort = "";
+        this.bildunterschrift = "";
+        this.sichtbarkeit = "";
+        this.person = "";
+        }
+    public void bildHinzufuegen() {
+        this.ort = "Düsseldorf";
+        this.bildunterschrift = "Ein sonniger Tag";
+        this.sichtbarkeit = "öffentlich";
+        this.person = "Nick";
+    }
+    
+    
+    
+}
